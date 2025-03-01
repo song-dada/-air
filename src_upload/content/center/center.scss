@@ -1,0 +1,83 @@
+@import '../../setting/color.scss';
+
+@mixin p-style {
+    font-size: 11pt;
+}
+
+.titleArea {
+    height: 50px;
+    border-radius: 5px;
+    background-color: $color-body;
+    box-shadow: 1px 5px 4px rgb(168, 168, 168);
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    position: relative;
+
+    p {
+        @include p-style;
+    }
+
+    >p {
+        margin-bottom: 5px;
+    }
+
+    button {
+        position: absolute;
+        right: 3%;
+        top: 60%;
+        width: 70px;
+    }
+}
+
+.titleSido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        @include p-style;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    p:nth-of-type(1) {
+        margin-right: 7px;
+    }
+}
+
+.clockArea {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    p {
+        @include p-style;
+        font-size: 10pt;
+    }
+
+    p:nth-of-type(1) {
+        margin-right: 10px;
+    }
+}
+
+
+.centerSelectArea{
+    padding-top: 5px;
+    .centerSelect  {
+        width: 150px;
+        height: 25px;
+        padding: 0 15px;
+    
+        border-radius: 10px;
+        margin-right: 15px;
+    
+        border: 1px solid #81808d;
+        color: #333;
+    }
+    
+}
